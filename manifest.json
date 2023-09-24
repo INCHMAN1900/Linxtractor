@@ -1,0 +1,17 @@
+{
+  "name": "Linxtractor",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Extract Youtube links from video description.",
+	"content_scripts": [
+    {
+			"run_at": "document_idle",
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+				"https://www.bilibili.com/*"
+      ]
+    }
+  ]
+}
